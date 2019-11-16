@@ -1,8 +1,8 @@
-# Geddit
+# Reddit
 
-This repository holds the Geddit code.
+This repository holds the Reddit aap Go code.
 
-Geddit displays the latest headlines of a subreddit.
+Reddit displays the latest 'golang' headlines of a subreddit.
 
 ## Licence
 
