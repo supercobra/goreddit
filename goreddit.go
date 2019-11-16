@@ -1,4 +1,4 @@
-package reddit
+package goreddit
 
 import (
 	"encoding/json"
@@ -8,6 +8,7 @@ import (
 	"net/http"
 )
 
+// Stringer gives Item a string function
 type Stringer interface {
 	String() string
 }
@@ -50,11 +51,11 @@ func Get(reddit string) ([]Item, error) {
 	req.Header.Set("User-Agent", "your bot 0.1")
 	resp, err := client.Do(req)
 
-	defer resp.Body.Close()
-
 	if err != nil {
 		return nil, err
 	}
+
+	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
 		return nil, errors.New(resp.Status)

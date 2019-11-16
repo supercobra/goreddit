@@ -1,4 +1,4 @@
-# Reddit
+# goreddit
 
 This repository holds the Reddit aap Go code.
 
