@@ -1,8 +1,16 @@
 # goreddit
 
-This repository holds the Reddit aap Go code.
+This repository holds the gerddit aap Go code.
 
-Reddit displays the latest 'golang' headlines of a subreddit.
+goreddit displays the latest 'golang' headlines of a subreddit.
+
+## Installation
+
+    go get github.com/supercobra/goreddit/geddit
+
+## To run
+
+$ geddit
 
 ## Licence
 
